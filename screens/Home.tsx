@@ -11,6 +11,7 @@ export const Home = (props: Props) => {
 
   useLayoutEffect(() => {
     navigation.setOptions({
+      title: 'ARID',
       headerTitleAlign: 'center',
     })
   }, [navigation])
