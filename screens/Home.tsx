@@ -1,5 +1,4 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
-import { StatusBar } from 'expo-status-bar'
 import { useLayoutEffect } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { NativeRootStackParamList } from '../App'
@@ -20,7 +19,6 @@ export const Home = (props: Props) => {
   return (
     <View style={styles.container}>
       <DropdownComponent />
-      <StatusBar style='light' />
     </View>
   )
 }
