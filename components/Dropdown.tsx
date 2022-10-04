@@ -30,16 +30,20 @@ export const DropdownComponent = () => {
       {renderLabel()}
       <Dropdown
         style={[styles.dropdown, isFocus && { borderColor: '#E0FFFF' }]}
+        containerStyle={styles.containerStyle}
         placeholderStyle={styles.placeholderStyle}
         selectedTextStyle={styles.selectedTextStyle}
         inputSearchStyle={styles.inputSearchStyle}
         iconStyle={styles.iconStyle}
+        itemContainerStyle={styles.itemContainerStyle}
+        itemTextStyle={styles.itemTextStyle}
+        activeColor={'darkgrey'}
         data={data}
         search
         maxHeight={300}
         labelField='label'
         valueField='value'
-        placeholder={!isFocus ? 'Select State or Union Territory' : ''}
+        placeholder={!isFocus === true ? 'Select State or Union Territory' : ''}
         searchPlaceholder='Search...'
         value={value}
         onFocus={() => setIsFocus(true)}
@@ -51,8 +55,8 @@ export const DropdownComponent = () => {
         renderLeftIcon={() => (
           <AntDesign
             style={styles.icon}
-            color={isFocus ? '#E0FFFF' : '#fff'}
-            name='Safety'
+            color={isFocus === false ? '#E0FFFF' : '#ffffff'}
+            name='downcircleo'
             size={20}
           />
         )}
@@ -66,6 +70,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#000000',
     padding: 16,
   },
+  containerStyle: { backgroundColor: '#000000' },
+  itemContainerStyle: { backgroundColor: '#1F2022' },
+  itemTextStyle: { color: '#ffffff' },
   dropdown: {
     height: 50,
     borderColor: '#E0FFFF',
@@ -78,20 +85,22 @@ const styles = StyleSheet.create({
   },
   label: {
     position: 'absolute',
-    backgroundColor: '#1F2022',
+    backgroundColor: '#000000',
     left: 22,
     top: 8,
     zIndex: 999,
     paddingHorizontal: 8,
     fontSize: 14,
     borderRadius: 10,
+    color: '#E0FFFF',
   },
   placeholderStyle: {
     fontSize: 16,
-    color: '#E0FFFF',
+    color: '#fff',
   },
   selectedTextStyle: {
     fontSize: 16,
+    color: '#E0FFFF',
   },
   iconStyle: {
     width: 20,
@@ -100,5 +109,6 @@ const styles = StyleSheet.create({
   inputSearchStyle: {
     height: 40,
     fontSize: 16,
+    color: '#E0FFFF',
   },
 })
