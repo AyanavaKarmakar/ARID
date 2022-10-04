@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
     top: 8,
     zIndex: 999,
     paddingHorizontal: 8,
-    fontSize: 14,
+    fontSize: 12,
     borderRadius: 10,
     color: '#E0FFFF',
   },
