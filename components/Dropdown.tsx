@@ -23,7 +23,7 @@ export const DropdownComponent = () => {
 
   const renderLabel = () => {
     if (value || isFocus) {
-      return <Text style={[styles.label, isFocus && { color: '#E0FFFF' }]}>Region Selector</Text>
+      return <Text style={[styles.label, isFocus && { color: '#E0FFFF' }]}>Select Region</Text>
     }
     return null
   }
