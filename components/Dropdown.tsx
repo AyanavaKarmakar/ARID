@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
 import { Dropdown } from 'react-native-element-dropdown'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 
@@ -91,6 +91,13 @@ export const DropdownComponent = () => {
             size={20}
           />
         )}
+        flatListProps={{
+          ListEmptyComponent: () => (
+            <View>
+              <ActivityIndicator size={'large'} color='gray' />
+            </View>
+          ),
+        }}
       />
     </View>
   )
