@@ -14,6 +14,9 @@ const data = [
   { label: 'Item 8', value: '8' },
 ]
 
+/**
+ * @see https://github.com/hoaphantn7604/react-native-element-dropdown
+ */
 export const DropdownComponent = () => {
   const [value, setValue] = useState(null)
   const [isFocus, setIsFocus] = useState(false)
