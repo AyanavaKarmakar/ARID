@@ -3,7 +3,7 @@ import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
 import { Dropdown } from 'react-native-element-dropdown'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 
-const data = [
+const regionNames = [
   {
     label: 'Andaman and Nicobar Islands',
     value: 'Andaman and Nicobar Islands',
@@ -73,7 +73,7 @@ export const DropdownComponent = () => {
         itemContainerStyle={styles.itemContainerStyle}
         itemTextStyle={styles.itemTextStyle}
         activeColor={'#393D47'}
-        data={data}
+        data={regionNames}
         search
         maxHeight={300}
         labelField='label'
