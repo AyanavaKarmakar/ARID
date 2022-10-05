@@ -19,7 +19,7 @@ export const Calender = () => {
 
   return (
     <View>
-      {Platform.OS === 'android' && (
+      {(Platform.OS === 'android' || Platform.OS === 'ios') && (
         <CalendarStrip
           scrollable
           scrollerPaging
@@ -30,38 +30,13 @@ export const Calender = () => {
           daySelectionAnimation={{
             type: 'background',
             duration: 200,
-            highlightColor: '#E0FFFF',
+            highlightColor: 'lightgrey',
           }}
           style={styles.calenderStripContainer}
           calendarHeaderStyle={{ color: '#E0FFFF', fontSize: 30 }}
           calendarColor={'#393D47'}
           dateNumberStyle={{ color: 'white' }}
           dateNameStyle={{ color: 'whitesmoke', fontSize: 10 }}
-          highlightDateNumberStyle={{ color: '#000000' }}
-          highlightDateNameStyle={{ color: '#000000' }}
-          disabledDateNameStyle={{ color: 'grey' }}
-          disabledDateNumberStyle={{ color: 'grey' }}
-          iconContainer={{ flex: 0.1 }}
-        />
-      )}
-      {Platform.OS === 'ios' && (
-        <CalendarStrip
-          scrollable
-          scrollerPaging
-          selectedDate={moment().toDate()}
-          startingDate={moment().toDate()}
-          markedDates={markedDatesArray}
-          calendarAnimation={{ type: 'sequence', duration: 100 }}
-          daySelectionAnimation={{
-            type: 'background',
-            duration: 200,
-            highlightColor: '#E0FFFF',
-          }}
-          style={styles.calenderStripContainer}
-          calendarHeaderStyle={{ color: '#E0FFFF', fontSize: 30 }}
-          calendarColor={'#393D47'}
-          dateNumberStyle={{ color: 'white' }}
-          dateNameStyle={{ color: 'whitesmoke' }}
           highlightDateNumberStyle={{ color: '#000000' }}
           highlightDateNameStyle={{ color: '#000000' }}
           disabledDateNameStyle={{ color: 'grey' }}
@@ -80,7 +55,7 @@ export const Calender = () => {
           daySelectionAnimation={{
             type: 'background',
             duration: 200,
-            highlightColor: '#E0FFFF',
+            highlightColor: 'lightgrey',
           }}
           style={styles.calenderStripContainer}
           calendarHeaderStyle={{ color: '#E0FFFF' }}
