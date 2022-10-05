@@ -68,7 +68,7 @@ export const DropdownComponent = () => {
         iconStyle={styles.iconStyle}
         itemContainerStyle={styles.itemContainerStyle}
         itemTextStyle={styles.itemTextStyle}
-        activeColor={'darkgrey'}
+        activeColor={'#393D47'}
         data={data}
         search
         maxHeight={300}
