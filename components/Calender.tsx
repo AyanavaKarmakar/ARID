@@ -1,6 +1,9 @@
 import moment from 'moment-timezone'
 import { View, StyleSheet, Platform } from 'react-native'
 import CalendarStrip from 'react-native-calendar-strip'
+import { DB } from '../StaticData'
+
+console.log(DB)
 
 /**
  * Adapted from react-native-calender-strip
