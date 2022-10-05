@@ -3,6 +3,7 @@ import { View, StyleSheet, Platform } from 'react-native'
 import CalendarStrip from 'react-native-calendar-strip'
 
 /**
+ * Adapted from react-native-calender-strip
  * @see https://github.com/BugiDev/react-native-calendar-strip
  */
 export const Calender = () => {
