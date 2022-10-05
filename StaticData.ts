@@ -39,4 +39,23 @@ export const DB: DBTypes[] = [
       },
     ],
   },
+  {
+    stateName: 'Delhi',
+    extraInfo:
+      'Every excise year, the Government of Delhi, notifies the number of Prohibited days in a year. The three national holidays—26 January 2 October and 15 August, are always prohibited days, and additional prohibited days are announced at the start of the excise year (1 July).',
+    dryDates: [
+      {
+        date: modifyDate('01-26'),
+        reason: 'Republic Day',
+      },
+      {
+        date: modifyDate('08-15'),
+        reason: 'Independence Day',
+      },
+      {
+        date: modifyDate('10-02'),
+        reason: 'Gandhi Jayanti',
+      },
+    ],
+  },
 ]
