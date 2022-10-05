@@ -260,4 +260,37 @@ export const DB: DBTypes[] = [
       },
     ],
   },
+  {
+    stateName: 'Tamil Nadu',
+    dryDates: [
+      {
+        date: modifyDate('01-15'),
+        reason: 'Thiruvalluvar Day',
+      },
+      {
+        date: modifyDate('01-16'),
+        reason: 'Thiruvalluvar Day',
+      },
+      {
+        date: modifyDate('01-26'),
+        reason: 'Republic Day',
+      },
+      {
+        date: modifyDate('03-04'),
+        reason: 'Maha Shivratri',
+      },
+      {
+        date: modifyDate('05-10'),
+        reason: 'May Day',
+      },
+      {
+        date: modifyDate('08-15'),
+        reason: 'Independence Day',
+      },
+      {
+        date: modifyDate('10-02'),
+        reason: 'Gandhi Jayanti',
+      },
+    ],
+  },
 ]
