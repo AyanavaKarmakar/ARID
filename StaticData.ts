@@ -132,4 +132,21 @@ export const DB: DBTypes[] = [
       },
     ],
   },
+  {
+    stateName: 'Karnataka',
+    dryDates: [
+      {
+        date: modifyDate('01-26'),
+        reason: 'Republic Day',
+      },
+      {
+        date: modifyDate('10-02'),
+        reason: 'Gandhi Jayanti',
+      },
+      {
+        date: modifyDate('09-06'),
+        reason: 'Nandwani Jayanti',
+      },
+    ],
+  },
 ]
