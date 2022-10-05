@@ -30,15 +30,21 @@ export const Calender = () => {
           daySelectionAnimation={{
             type: 'background',
             duration: 200,
-            highlightColor: '#393D47',
+            highlightColor: '#6082B6',
           }}
           style={styles.calenderStripContainer}
-          calendarHeaderStyle={{ color: '#E0FFFF', fontSize: 30 }}
-          calendarColor={'#393D47'}
+          calendarHeaderStyle={{ color: '#87CEEB' }}
+          calendarColor={'#191970'}
           dateNumberStyle={{ color: '#FFFFF0' }}
           dateNameStyle={{ color: '#FFDEAD' }}
-          highlightDateNumberStyle={{ color: '#E0FFFF' }}
-          highlightDateNameStyle={{ color: '#E0FF11' }}
+          highlightDateNumberStyle={{ color: 'cyan' }}
+          highlightDateNameStyle={{ color: '#F0FFFF' }}
+          iconLeft={{
+            uri: 'https://cdn-icons-png.flaticon.com/512/1634/1634157.png',
+          }}
+          iconRight={{
+            uri: 'https://cdn-icons-png.flaticon.com/512/1634/1634158.png',
+          }}
           iconContainer={{ flex: 0.1 }}
         />
       )}
@@ -53,15 +59,21 @@ export const Calender = () => {
           daySelectionAnimation={{
             type: 'background',
             duration: 200,
-            highlightColor: '#393D47',
+            highlightColor: '#6082B6',
           }}
           style={styles.calenderStripContainer}
-          calendarHeaderStyle={{ color: '#E0FFFF', fontSize: 30 }}
-          calendarColor={'#393D47'}
+          calendarHeaderStyle={{ color: '#87CEEB', fontSize: 30 }}
+          calendarColor={'#191970'}
           dateNumberStyle={{ color: '#FFFFF0' }}
           dateNameStyle={{ color: '#FFDEAD' }}
-          highlightDateNumberStyle={{ color: '#E0FFFF' }}
-          highlightDateNameStyle={{ color: '#E0FF11' }}
+          highlightDateNumberStyle={{ color: 'cyan' }}
+          highlightDateNameStyle={{ color: '#F0FFFF' }}
+          iconLeft={{
+            uri: 'https://cdn-icons-png.flaticon.com/512/1634/1634157.png',
+          }}
+          iconRight={{
+            uri: 'https://cdn-icons-png.flaticon.com/512/1634/1634158.png',
+          }}
           iconContainer={{ flex: 0.1 }}
         />
       )}
@@ -71,8 +83,8 @@ export const Calender = () => {
 
 const styles = StyleSheet.create({
   calenderStripContainer: {
-    height: 300,
-    paddingTop: 50,
+    height: 200,
+    paddingTop: 20,
     paddingBottom: 10,
     borderRadius: 20,
   },
