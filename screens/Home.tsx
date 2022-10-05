@@ -32,10 +32,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#000000',
   },
   calenderContainer: {
-    paddingStart: 25,
-    paddingEnd: 25,
-    paddingTop: 20,
-    paddingBottom: 20,
+    paddingStart: 15,
+    paddingEnd: 15,
+    paddingTop: 15,
+    paddingBottom: 15,
     justifyContent: 'center',
   },
 })
