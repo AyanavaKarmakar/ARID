@@ -293,4 +293,93 @@ export const DB: DBTypes[] = [
       },
     ],
   },
+  {
+    stateName: 'West Bengal',
+    dryDates: [
+      {
+        date: modifyDate('01-14'),
+        reason: 'Makar Sankranti',
+      },
+      {
+        date: modifyDate('01-26'),
+        reason: 'Republic Day',
+      },
+      {
+        date: modifyDate('01-30'),
+        reason: 'Martyrs Day',
+      },
+      {
+        date: modifyDate('03-01'),
+        reason: 'Maha Shivratri',
+      },
+      {
+        date: modifyDate('03-18'),
+        reason: 'Holi',
+      },
+      {
+        date: modifyDate('04-10'),
+        reason: 'Ram Navami',
+      },
+      {
+        date: modifyDate('04-15'),
+        reason: 'Mahavir Janma Kalyanak',
+      },
+      {
+        date: modifyDate('07-02'),
+        reason: 'Eid-Ul-Fitr',
+      },
+      {
+        date: modifyDate('07-03'),
+        reason: 'Eid-Ul-Fitr',
+      },
+      {
+        date: modifyDate('08-09'),
+        reason: 'Eid al-Adha (Bakrid)',
+      },
+      {
+        date: modifyDate('08-10'),
+        reason: 'Eid al-Adha (Bakrid)',
+      },
+      {
+        date: modifyDate('08-08'),
+        reason: 'Muharram',
+      },
+      {
+        date: modifyDate('08-11'),
+        reason: 'Raksha Bandhan',
+      },
+      {
+        date: modifyDate('08-15'),
+        reason: 'Independence Day',
+      },
+      {
+        date: modifyDate('08-18'),
+        reason: 'Janmashtami',
+      },
+      {
+        date: modifyDate('08-31'),
+        reason: 'Ganesh Chaturthi',
+      },
+      {
+        date: modifyDate('10-02'),
+        reason: 'Gandhi Jayanti',
+      },
+      {
+        date: modifyDate('10-05'),
+        reason: 'Dussehra',
+      },
+      {
+        date: modifyDate('10-09'),
+        reason: 'Eid -e- Milad',
+      },
+      {
+        date: modifyDate('10-24'),
+        reason: 'Diwali',
+      },
+      {
+        date: modifyDate('11-8'),
+        reason: 'Guru Nanak Jayanti',
+      },
+    ],
+  },
 ]
