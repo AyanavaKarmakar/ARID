@@ -91,4 +91,45 @@ export const DB: DBTypes[] = [
       },
     ],
   },
+  {
+    stateName: 'Kashmir',
+    dryDates: [
+      {
+        date: modifyDate('03-04'),
+        reason: 'Maha Shivratri',
+      },
+      {
+        date: modifyDate('07-04'),
+        reason: 'Eid-Ul-Fitr',
+      },
+      {
+        date: modifyDate('07-05'),
+        reason: 'Eid-Ul-Fitr',
+      },
+      {
+        date: modifyDate('08-11'),
+        reason: 'Eid al-Adha (Bakrid)',
+      },
+      {
+        date: modifyDate('08-15'),
+        reason: 'Independence Day',
+      },
+      {
+        date: modifyDate('09-18'),
+        reason: 'Krishna Janmashtami',
+      },
+      {
+        date: modifyDate('10-02'),
+        reason: 'Gandi Jayanti',
+      },
+      {
+        date: modifyDate('11-09'),
+        reason: 'Eid-Ul-Milad',
+      },
+      {
+        date: modifyDate('11-10'),
+        reason: 'Eid-Ul-Milad',
+      },
+    ],
+  },
 ]
