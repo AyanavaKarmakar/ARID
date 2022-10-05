@@ -149,4 +149,27 @@ export const DB: DBTypes[] = [
       },
     ],
   },
+  {
+    stateName: 'Kerala',
+    extraInfo:
+      'Sundays are no longer observed as Prohibited days in the state. Dry days are observed on the day of polling and the previous day during elections as well.',
+    dryDates: [
+      {
+        date: modifyDate('01-01'),
+        reason: 'New Year Day',
+      },
+      {
+        date: modifyDate('01-26'),
+        reason: 'Republic Day',
+      },
+      {
+        date: modifyDate('08-15'),
+        reason: 'Independence Day',
+      },
+      {
+        date: modifyDate('10-02'),
+        reason: 'Gandhi Jayanti',
+      },
+    ],
+  },
 ]
