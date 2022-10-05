@@ -54,8 +54,5 @@
     "prettier": "^2.7.1",
     "typescript": "~4.3.5"
   },
-  "private": true,
-  "overrides": {
-    "node-fetch": "^2.6.7"
-  }
+  "private": true
 }
