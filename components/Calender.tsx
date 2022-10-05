@@ -14,7 +14,7 @@ export const Calender = () => {
    */
   const dryDayDatesArray = ['2022-10-02', '2022-10-05', '2022-10-09', '2022-10-24']
   const markedDatesArray = dryDayDatesArray.map((item) => {
-    return { date: item, lines: [{ color: 'cyan' }] }
+    return { date: item, lines: [{ color: '#E0FFFF' }] }
   })
 
   return (
@@ -30,15 +30,15 @@ export const Calender = () => {
           daySelectionAnimation={{
             type: 'background',
             duration: 200,
-            highlightColor: '#6082B6',
+            highlightColor: '#000000',
           }}
-          style={styles.calenderStripContainer}
-          calendarHeaderStyle={{ color: '#87CEEB' }}
-          calendarColor={'#191970'}
+          style={styles.calenderStripContainerAndriodAndIos}
+          calendarHeaderStyle={{ color: '#87CEEB', fontWeight: 'bold', fontSize: 25 }}
+          calendarColor={'#000000'}
+          dateNameStyle={{ color: '#FFDEAD', fontWeight: 'bold' }}
           dateNumberStyle={{ color: '#FFFFF0' }}
-          dateNameStyle={{ color: '#FFDEAD' }}
-          highlightDateNumberStyle={{ color: 'cyan' }}
-          highlightDateNameStyle={{ color: '#F0FFFF' }}
+          highlightDateNameStyle={{ color: '#E0FFFF', fontWeight: 'bold' }}
+          highlightDateNumberStyle={{ color: '#E0FFFF' }}
           iconLeft={{
             uri: 'https://cdn-icons-png.flaticon.com/512/1634/1634157.png',
           }}
@@ -59,15 +59,15 @@ export const Calender = () => {
           daySelectionAnimation={{
             type: 'background',
             duration: 200,
-            highlightColor: '#6082B6',
+            highlightColor: '#000000',
           }}
-          style={styles.calenderStripContainer}
-          calendarHeaderStyle={{ color: '#87CEEB', fontSize: 30 }}
-          calendarColor={'#191970'}
+          style={styles.calenderStripContainerWeb}
+          calendarHeaderStyle={{ color: '#87CEEB', fontWeight: 'bold', fontSize: 25 }}
+          calendarColor={'#000000'}
+          dateNameStyle={{ color: '#FFDEAD', fontWeight: 'bold' }}
           dateNumberStyle={{ color: '#FFFFF0' }}
-          dateNameStyle={{ color: '#FFDEAD' }}
-          highlightDateNumberStyle={{ color: 'cyan' }}
-          highlightDateNameStyle={{ color: '#F0FFFF' }}
+          highlightDateNameStyle={{ color: '#E0FFFF', fontWeight: 'bold' }}
+          highlightDateNumberStyle={{ color: '#E0FFFF' }}
           iconLeft={{
             uri: 'https://cdn-icons-png.flaticon.com/512/1634/1634157.png',
           }}
@@ -82,8 +82,14 @@ export const Calender = () => {
 }
 
 const styles = StyleSheet.create({
-  calenderStripContainer: {
+  calenderStripContainerWeb: {
     height: 200,
+    paddingTop: 20,
+    paddingBottom: 10,
+    borderRadius: 20,
+  },
+  calenderStripContainerAndriodAndIos: {
+    height: 150,
     paddingTop: 20,
     paddingBottom: 10,
     borderRadius: 20,
