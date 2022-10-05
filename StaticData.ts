@@ -172,4 +172,59 @@ export const DB: DBTypes[] = [
       },
     ],
   },
+  {
+    stateName: 'Maharashtra',
+    extraInfo:
+      'The district collector can also designate any day as a Prohibited day by giving seven days notice. His list may vary depending on the date of festivals as well as specific Prohibited day announcements by the Government of Maharashtra.',
+    dryDates: [
+      {
+        date: modifyDate('01-26'),
+        reason: 'Republic Day',
+      },
+      {
+        date: modifyDate('01-30'),
+        reason: 'Martyrs Day',
+      },
+      {
+        date: modifyDate('05-01'),
+        reason: 'Maharashtra Day',
+      },
+      {
+        date: modifyDate('08-15'),
+        reason: 'Independence Day',
+      },
+      {
+        date: modifyDate('10-02'),
+        reason: 'Gandhi Week',
+      },
+      {
+        date: modifyDate('10-03'),
+        reason: 'Gandhi Week',
+      },
+      {
+        date: modifyDate('10-04'),
+        reason: 'Gandhi Week',
+      },
+      {
+        date: modifyDate('10-05'),
+        reason: 'Gandhi Week',
+      },
+      {
+        date: modifyDate('10-06'),
+        reason: 'Gandhi Week',
+      },
+      {
+        date: modifyDate('10-07'),
+        reason: 'Gandhi Week',
+      },
+      {
+        date: modifyDate('10-08'),
+        reason: 'Gandhi Week',
+      },
+      {
+        date: modifyDate('10-09'),
+        reason: 'Gandhi Week',
+      },
+    ],
+  },
 ]
