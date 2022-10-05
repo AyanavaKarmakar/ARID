@@ -58,4 +58,37 @@ export const DB: DBTypes[] = [
       },
     ],
   },
+  {
+    stateName: 'Jammu',
+    dryDates: [
+      {
+        date: modifyDate('03-04'),
+        reason: 'Maha Shivratri',
+      },
+      {
+        date: modifyDate('04-10'),
+        reason: 'Ram Navami',
+      },
+      {
+        date: modifyDate('08-15'),
+        reason: 'Krishna Janmashtami',
+      },
+      {
+        date: modifyDate('08-15'),
+        reason: 'Independence Day',
+      },
+      {
+        date: modifyDate('09-18'),
+        reason: 'Krishna Janmashtami',
+      },
+      {
+        date: modifyDate('10-02'),
+        reason: 'Gandi Jayanti',
+      },
+      {
+        date: modifyDate('11-08'),
+        reason: 'Guru Nanak Jayanti',
+      },
+    ],
+  },
 ]
