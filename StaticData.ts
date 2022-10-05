@@ -227,4 +227,37 @@ export const DB: DBTypes[] = [
       },
     ],
   },
+  {
+    stateName: 'Rajasthan',
+    dryDates: [
+      {
+        date: modifyDate('01-26'),
+        reason: 'Republic Day',
+      },
+      {
+        date: modifyDate('01-30'),
+        reason: 'Martyrs Day',
+      },
+      {
+        date: modifyDate('03-04'),
+        reason: 'Maha Shivratri',
+      },
+      {
+        date: modifyDate('03-30'),
+        reason: 'Rajasthan Formation Day',
+      },
+      {
+        date: modifyDate('08-15'),
+        reason: 'Independence Day',
+      },
+      {
+        date: modifyDate('10-02'),
+        reason: 'Gandhi Jayanti',
+      },
+      {
+        date: modifyDate('10-30'),
+        reason: 'Harijan Day',
+      },
+    ],
+  },
 ]
