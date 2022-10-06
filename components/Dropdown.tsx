@@ -1,18 +1,19 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
 import { Dropdown } from 'react-native-element-dropdown'
 import AntDesign from 'react-native-vector-icons/AntDesign'
+import { RegionContext } from '../RegionContext'
 import { regionNames } from '../StaticData'
 
 /**
  * @see https://github.com/hoaphantn7604/react-native-element-dropdown
  */
 export const DropdownComponent = () => {
-  const [value, setValue] = useState(null)
   const [isFocus, setIsFocus] = useState(false)
+  const { region, setRegion } = useContext(RegionContext)
 
   const renderLabel = () => {
-    if (value || isFocus) {
+    if (region || isFocus) {
       return <Text style={[styles.label, isFocus && { color: '#E0FFFF' }]}>Select Region</Text>
     }
     return null
@@ -38,11 +39,11 @@ export const DropdownComponent = () => {
         valueField='value'
         placeholder={!isFocus === true ? 'Select State or Union Territory' : ''}
         searchPlaceholder='Search...'
-        value={value}
+        value={region}
         onFocus={() => setIsFocus(true)}
         onBlur={() => setIsFocus(false)}
         onChange={(item) => {
-          setValue(item.value)
+          setRegion(item.value)
           setIsFocus(false)
         }}
         renderLeftIcon={() => (

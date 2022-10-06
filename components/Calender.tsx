@@ -1,6 +1,9 @@
 import moment from 'moment-timezone'
+import { useContext } from 'react'
 import { View, StyleSheet, Platform } from 'react-native'
 import CalendarStrip from 'react-native-calendar-strip'
+import { RegionContext } from '../RegionContext'
+
 import { DB } from '../StaticData'
 
 /**
@@ -8,10 +11,12 @@ import { DB } from '../StaticData'
  * @see https://github.com/BugiDev/react-native-calendar-strip
  */
 export const Calender = () => {
+  const { region } = useContext(RegionContext)
+
   /**
    * Filters object for West Bengal Region
    */
-  const dryDatesForWestBengalObjectArray = DB.filter((item) => item.stateName === 'West Bengal')
+  const dryDatesForWestBengalObjectArray = DB.filter((item) => item.stateName === region)
 
   /**
    * Finds out number of dry days for West Bengal Region
