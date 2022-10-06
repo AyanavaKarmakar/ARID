@@ -2,49 +2,7 @@ import { useState } from 'react'
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
 import { Dropdown } from 'react-native-element-dropdown'
 import AntDesign from 'react-native-vector-icons/AntDesign'
-
-const regionNames = [
-  {
-    label: 'Andaman and Nicobar Islands',
-    value: 'Andaman and Nicobar Islands',
-  },
-  {
-    label: 'Delhi',
-    value: 'Delhi',
-  },
-  {
-    label: 'Jammu',
-    value: 'Jammu',
-  },
-  {
-    label: 'Kashmir',
-    value: 'Kashmir',
-  },
-  {
-    label: 'Karnataka',
-    value: 'Karnataka',
-  },
-  {
-    label: 'Kerala',
-    value: 'Kerala',
-  },
-  {
-    label: 'Maharashtra',
-    value: 'Maharashtra',
-  },
-  {
-    label: 'Rajasthan',
-    value: 'Rajasthan',
-  },
-  {
-    label: 'Tamil Nadu',
-    value: 'Tamil Nadu',
-  },
-  {
-    label: 'West Bengal',
-    value: 'West Bengal',
-  },
-]
+import { regionNames } from '../StaticData'
 
 /**
  * @see https://github.com/hoaphantn7604/react-native-element-dropdown
