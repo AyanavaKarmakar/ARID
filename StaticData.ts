@@ -178,6 +178,10 @@ export const DB: DBTypes[] = [
       'The district collector can also designate any day as a Prohibited day by giving seven days notice. His list may vary depending on the date of festivals as well as specific Prohibited day announcements by the Government of Maharashtra.',
     dryDates: [
       {
+        date: modifyDate('01-14'),
+        reason: 'Makar Sakranti',
+      },
+      {
         date: modifyDate('01-26'),
         reason: 'Republic Day',
       },
@@ -186,44 +190,96 @@ export const DB: DBTypes[] = [
         reason: 'Martyrs Day',
       },
       {
+        date: modifyDate('02-19'),
+        reason: 'Chhatrapati Shivaji Mahavir Jayanti',
+      },
+      {
+        date: modifyDate('02-26'),
+        reason: 'Swami Dayanand Saraswati Jayanti',
+      },
+      {
+        date: modifyDate('03-01'),
+        reason: 'Maha Shivratri',
+      },
+      {
+        date: modifyDate('03-18'),
+        reason: 'Holi',
+      },
+      {
+        date: modifyDate('04-10'),
+        reason: 'Ram Navami',
+      },
+      {
+        date: modifyDate('04-14'),
+        reason: 'Ambedkar Jayanti & Mahavir Jayanti',
+      },
+      {
+        date: modifyDate('04-15'),
+        reason: 'Good Friday',
+      },
+      {
         date: modifyDate('05-01'),
         reason: 'Maharashtra Day',
+      },
+      {
+        date: modifyDate('05-03'),
+        reason: 'Eid Ul Fitr',
+      },
+      {
+        date: modifyDate('07-10'),
+        reason: 'Ashadi Ekadashi',
+      },
+      {
+        date: modifyDate('07-13'),
+        reason: 'Guru Purnima',
+      },
+      {
+        date: modifyDate('08-08'),
+        reason: 'Muharram',
       },
       {
         date: modifyDate('08-15'),
         reason: 'Independence Day',
       },
       {
+        date: modifyDate('08-19'),
+        reason: 'Janmashtami',
+      },
+      {
+        date: modifyDate('08-31'),
+        reason: 'Ganesh Chaturthi',
+      },
+      {
+        date: modifyDate('09-09'),
+        reason: 'Anant Chaturdashi',
+      },
+      {
         date: modifyDate('10-02'),
-        reason: 'Gandhi Week',
-      },
-      {
-        date: modifyDate('10-03'),
-        reason: 'Gandhi Week',
-      },
-      {
-        date: modifyDate('10-04'),
-        reason: 'Gandhi Week',
+        reason: 'Gandhi Jayanti',
       },
       {
         date: modifyDate('10-05'),
-        reason: 'Gandhi Week',
-      },
-      {
-        date: modifyDate('10-06'),
-        reason: 'Gandhi Week',
-      },
-      {
-        date: modifyDate('10-07'),
-        reason: 'Gandhi Week',
-      },
-      {
-        date: modifyDate('10-08'),
-        reason: 'Gandhi Week',
+        reason: 'Dussehra',
       },
       {
         date: modifyDate('10-09'),
-        reason: 'Gandhi Week',
+        reason: 'Maharishi Valmiki Jayanti',
+      },
+      {
+        date: modifyDate('10-24'),
+        reason: 'Diwali',
+      },
+      {
+        date: modifyDate('11-04'),
+        reason: 'Kartiki Ekadashi',
+      },
+      {
+        date: modifyDate('11-08'),
+        reason: 'Guru Nanak Jayanti',
+      },
+      {
+        date: modifyDate('12-25'),
+        reason: 'Christmas',
       },
     ],
   },
