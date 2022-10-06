@@ -14,12 +14,12 @@ export const Calender = () => {
   const { region } = useContext(RegionContext)
 
   /**
-   * Filters object for West Bengal Region
+   * Filters object for Selected Region
    */
   const dryDatesForWestBengalObjectArray = DB.filter((item) => item.stateName === region)
 
   /**
-   * Finds out number of dry days for West Bengal Region
+   * Finds out number of dry days for the Selected Region
    */
   const dryDatesArrayLenght = dryDatesForWestBengalObjectArray.map((item) => {
     return item.dryDates.length
