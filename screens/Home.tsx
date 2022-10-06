@@ -22,7 +22,9 @@ export const Home = (props: Props) => {
       <View style={styles.calenderContainer}>
         <Calender />
       </View>
-      <Info />
+      <View style={styles.infoContainer}>
+        <Info />
+      </View>
     </View>
   )
 }
@@ -35,6 +37,13 @@ const styles = StyleSheet.create({
   calenderContainer: {
     paddingStart: 15,
     paddingEnd: 15,
+    paddingTop: 15,
+    paddingBottom: 15,
+    justifyContent: 'center',
+  },
+  infoContainer: {
+    paddingStart: 50,
+    paddingEnd: 50,
     paddingTop: 15,
     paddingBottom: 15,
     justifyContent: 'center',
