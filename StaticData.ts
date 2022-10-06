@@ -11,6 +11,11 @@ export interface DBTypes {
   dryDates: DryDates[]
 }
 
+export interface RegionNameTypes {
+  label: string
+  value: string
+}
+
 /**
  * @param date
  * @returns current year + month + day as string
@@ -18,6 +23,49 @@ export interface DBTypes {
 const modifyDate = (date: string) => {
   return `${moment().format('YYYY')}-${date}`
 }
+
+export const regionNames: RegionNameTypes[] = [
+  {
+    label: 'Andaman and Nicobar Islands',
+    value: 'Andaman and Nicobar Islands',
+  },
+  {
+    label: 'Delhi',
+    value: 'Delhi',
+  },
+  {
+    label: 'Jammu',
+    value: 'Jammu',
+  },
+  {
+    label: 'Kashmir',
+    value: 'Kashmir',
+  },
+  {
+    label: 'Karnataka',
+    value: 'Karnataka',
+  },
+  {
+    label: 'Kerala',
+    value: 'Kerala',
+  },
+  {
+    label: 'Maharashtra',
+    value: 'Maharashtra',
+  },
+  {
+    label: 'Rajasthan',
+    value: 'Rajasthan',
+  },
+  {
+    label: 'Tamil Nadu',
+    value: 'Tamil Nadu',
+  },
+  {
+    label: 'West Bengal',
+    value: 'West Bengal',
+  },
+]
 
 export const DB: DBTypes[] = [
   {
