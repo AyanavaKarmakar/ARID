@@ -1,17 +1,21 @@
 import moment from 'moment-timezone'
 import { View, StyleSheet, Platform } from 'react-native'
 import CalendarStrip from 'react-native-calendar-strip'
+import { useSelector } from 'react-redux'
 import { DB } from '../StaticData'
+import { RootState } from '../store'
 
 /**
  * Adapted from react-native-calender-strip
  * @see https://github.com/BugiDev/react-native-calendar-strip
  */
 export const Calender = () => {
+  const region = useSelector((state: RootState) => state.region.region)
+
   /**
    * Filters object for West Bengal Region
    */
-  const dryDatesForWestBengalObjectArray = DB.filter((item) => item.stateName === 'West Bengal')
+  const dryDatesForWestBengalObjectArray = DB.filter((item) => item.stateName === region)
 
   /**
    * Finds out number of dry days for West Bengal Region
