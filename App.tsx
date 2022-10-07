@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { StatusBar } from 'expo-status-bar'
 import { Home } from './screens'
 import { RegionContext } from './RegionContext'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Provider as PaperProvider } from 'react-native-paper'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
@@ -19,7 +19,8 @@ const globalScreenOptions = {
 }
 
 export default function App() {
-  const [region, setRegion] = useState('West Bengal')
+  const defaultRegion = 'West Bengal'
+  const [region, setRegion] = useState(defaultRegion)
 
   const toggleRegion = (newRegion: string) => {
     setRegion(newRegion)
@@ -39,7 +40,29 @@ export default function App() {
     }
   }
 
-  storeData(region)
+  /**
+   * @see https://react-native-async-storage.github.io/async-storage/docs/usage#reading-string-value
+   */
+  const getData = async () => {
+    try {
+      const value = await AsyncStorage.getItem('region')
+      if (value !== null) {
+        setRegion(value)
+      }
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
+  useEffect(() => {
+    getData()
+  }, [])
+
+  useEffect(() => {
+    if (region !== defaultRegion) {
+      storeData(region)
+    }
+  }, [region])
 
   return (
     <RegionContext.Provider value={contextValue}>
