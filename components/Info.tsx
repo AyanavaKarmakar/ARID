@@ -58,14 +58,14 @@ export const Info = () => {
     <Card mode='elevated' elevation={3} style={styles.cardContainer}>
       <Card.Title
         title={isDryDay === true ? 'DRY DAY' : 'NOT A DRY DAY'}
-        subtitle='Next dry day is in X days'
+        subtitle={isDryDay === true ? 'Hope your fridge aint empty!' : 'Yay! Drink up!! Cheers!!!'}
         titleNumberOfLines={1}
         titleVariant={'headlineSmall'}
         titleStyle={{
           ...styles.cardTitleStyle,
           color: `${isDryDay === true ? '#FF2400' : '#0FFF50'}`,
         }}
-        subtitleNumberOfLines={1}
+        subtitleNumberOfLines={2}
         subtitleVariant={'bodyLarge'}
         subtitleStyle={styles.cardSubtitleStyle}
       />
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
   cardTitleStyle: {
     textAlign: 'center',
     fontWeight: 'bold',
-    paddingBottom: 10,
+    paddingBottom: 5,
   },
   cardSubtitleStyle: {
     textAlign: 'center',
