@@ -2,7 +2,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { useLayoutEffect } from 'react'
 import { Platform, StyleSheet, View } from 'react-native'
 import { NativeRootStackParamList } from '../App'
-import { Calender, DropdownComponent, Info } from '../components'
+import { Calender, DropdownComponent, Info, Loading } from '../components'
 
 type Props = NativeStackScreenProps<NativeRootStackParamList, 'Home'>
 
