@@ -5,6 +5,7 @@ import { Home } from './screens'
 import { RegionContext } from './RegionContext'
 import { useState } from 'react'
 import { Provider as PaperProvider } from 'react-native-paper'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 export type NativeRootStackParamList = {
   Home: undefined
@@ -25,6 +26,20 @@ export default function App() {
   }
 
   const contextValue = { region: region, setRegion: toggleRegion }
+
+  /**
+   * @see https://react-native-async-storage.github.io/async-storage/docs/usage#storing-data
+   * @param value
+   */
+  const storeData = async (value: string) => {
+    try {
+      await AsyncStorage.setItem('region', value)
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
+  storeData(region)
 
   return (
     <RegionContext.Provider value={contextValue}>
