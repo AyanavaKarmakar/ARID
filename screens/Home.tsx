@@ -65,7 +65,6 @@ const styles = StyleSheet.create({
   infoContainerAndroidAndIos: {
     paddingStart: 30,
     paddingEnd: 30,
-    paddingTop: 10,
     justifyContent: 'center',
   },
 })

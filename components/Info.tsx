@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
   cardTitleStyle: {
     textAlign: 'center',
     fontWeight: 'bold',
+    paddingTop: 15,
     paddingBottom: 5,
   },
   cardSubtitleStyle: {
