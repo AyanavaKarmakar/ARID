@@ -1,8 +1,8 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { useLayoutEffect } from 'react'
-import { StyleSheet, View } from 'react-native'
+import { Platform, StyleSheet, View } from 'react-native'
 import { NativeRootStackParamList } from '../App'
-import { Calender, DropdownComponent } from '../components'
+import { Calender, DropdownComponent, Info } from '../components'
 
 type Props = NativeStackScreenProps<NativeRootStackParamList, 'Home'>
 
@@ -22,6 +22,10 @@ export const Home = (props: Props) => {
       <View style={styles.calenderContainer}>
         <Calender />
       </View>
+      <View style={styles.infoContainerWeb}>{Platform.OS === 'web' && <Info />}</View>
+      <View style={styles.infoContainerAndroidAndIos}>
+        {(Platform.OS === 'ios' || Platform.OS === 'android') && <Info />}
+      </View>
     </View>
   )
 }
@@ -36,6 +40,19 @@ const styles = StyleSheet.create({
     paddingEnd: 15,
     paddingTop: 15,
     paddingBottom: 15,
+    justifyContent: 'center',
+  },
+  infoContainerWeb: {
+    paddingStart: 25,
+    paddingEnd: 25,
+    paddingTop: 15,
+    paddingBottom: 15,
+    justifyContent: 'center',
+  },
+  infoContainerAndroidAndIos: {
+    paddingStart: 30,
+    paddingEnd: 30,
+    paddingTop: 10,
     justifyContent: 'center',
   },
 })

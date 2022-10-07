@@ -16,19 +16,19 @@ export const Calender = () => {
   /**
    * Filters object for Selected Region
    */
-  const dryDatesForWestBengalObjectArray = DB.filter((item) => item.stateName === region)
+  const dryDatesForRegionObjectArray = DB.filter((item) => item.stateName === region)
 
   /**
    * Finds out number of dry days for the Selected Region
    */
-  const dryDatesArrayLenght = dryDatesForWestBengalObjectArray.map((item) => {
+  const dryDatesArrayLenght = dryDatesForRegionObjectArray.map((item) => {
     return item.dryDates.length
   })
 
   /**
    * Fetching array of dry days dates
    */
-  const dryDatesArray = dryDatesForWestBengalObjectArray.map((item) => {
+  const dryDatesArray = dryDatesForRegionObjectArray.map((item) => {
     const tempArray = []
     for (let i = 0; i < dryDatesArrayLenght[0]; ++i) {
       tempArray.push(item.dryDates[i].date)

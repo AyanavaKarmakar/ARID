@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar'
 import { Home } from './screens'
 import { RegionContext } from './RegionContext'
 import { useState } from 'react'
+import { Provider as PaperProvider } from 'react-native-paper'
 
 export type NativeRootStackParamList = {
   Home: undefined
@@ -27,12 +28,14 @@ export default function App() {
 
   return (
     <RegionContext.Provider value={contextValue}>
-      <NavigationContainer>
-        <Stack.Navigator screenOptions={globalScreenOptions}>
-          <Stack.Screen name='Home' component={Home} />
-        </Stack.Navigator>
-        <StatusBar style='light' />
-      </NavigationContainer>
+      <PaperProvider>
+        <NavigationContainer>
+          <Stack.Navigator screenOptions={globalScreenOptions}>
+            <Stack.Screen name='Home' component={Home} />
+          </Stack.Navigator>
+          <StatusBar style='light' />
+        </NavigationContainer>
+      </PaperProvider>
     </RegionContext.Provider>
   )
 }
