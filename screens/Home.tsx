@@ -1,6 +1,6 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { useLayoutEffect, useState, useEffect } from 'react'
-import { Platform, StyleSheet, View, Dimensions } from 'react-native'
+import { Platform, StyleSheet, View } from 'react-native'
 import { NativeRootStackParamList } from '../App'
 import { Calender, DropdownComponent, Info, Loading, Footer } from '../components'
 
@@ -10,7 +10,6 @@ export const Home = (props: Props) => {
   const { navigation } = props
   const [isLoading, setIsLoading] = useState(true)
   const DELAY_MS = 1000
-  const { width, height } = Dimensions.get('screen')
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -26,7 +25,7 @@ export const Home = (props: Props) => {
   }, [])
 
   return (
-    <View style={{ ...styles.container, width: width, height: height - 500 }}>
+    <View style={styles.container}>
       {isLoading === true && <Loading />}
       {isLoading === false && (
         <>
@@ -40,7 +39,7 @@ export const Home = (props: Props) => {
           </View>
         </>
       )}
-      <View style={{ width: width, height: 500 }}>
+      <View>
         <Footer />
       </View>
     </View>
