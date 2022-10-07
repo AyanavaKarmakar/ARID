@@ -23,6 +23,9 @@ export const Home = (props: Props) => {
         <Calender />
       </View>
       <View style={styles.infoContainerWeb}>{Platform.OS === 'web' && <Info />}</View>
+      <View style={styles.infoContainerAndroidAndIos}>
+        {(Platform.OS === 'ios' || Platform.OS === 'android') && <Info />}
+      </View>
     </View>
   )
 }
@@ -44,6 +47,12 @@ const styles = StyleSheet.create({
     paddingEnd: 25,
     paddingTop: 15,
     paddingBottom: 15,
+    justifyContent: 'center',
+  },
+  infoContainerAndroidAndIos: {
+    paddingStart: 30,
+    paddingEnd: 30,
+    paddingTop: 10,
     justifyContent: 'center',
   },
 })
