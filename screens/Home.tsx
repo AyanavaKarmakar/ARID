@@ -2,7 +2,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { useLayoutEffect, useState, useEffect } from 'react'
 import { Platform, StyleSheet, View } from 'react-native'
 import { NativeRootStackParamList } from '../App'
-import { Calender, DropdownComponent, Info, Loading } from '../components'
+import { Calender, DropdownComponent, Info, Loading, Footer } from '../components'
 
 type Props = NativeStackScreenProps<NativeRootStackParamList, 'Home'>
 
@@ -39,6 +39,9 @@ export const Home = (props: Props) => {
           </View>
         </>
       )}
+      <View>
+        <Footer />
+      </View>
     </View>
   )
 }
