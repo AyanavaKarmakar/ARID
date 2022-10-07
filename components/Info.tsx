@@ -1,7 +1,24 @@
 import { Card, Paragraph, Title } from 'react-native-paper'
+import { useContext } from 'react'
 import { StyleSheet } from 'react-native'
+import { RegionContext } from '../RegionContext'
+import { DB } from '../StaticData'
 
 export const Info = () => {
+  const { region } = useContext(RegionContext)
+
+  /**
+   * Filters object for Selected Region
+   */
+  const dryDatesForRegionObjectArray = DB.filter((item) => item.stateName === region)
+
+  /**
+   * Finds out extra info for the Selected Region
+   */
+  const regionExtraInfo = dryDatesForRegionObjectArray.map((item) => {
+    return item.extraInfo
+  })
+
   return (
     <Card mode='elevated' elevation={3} style={styles.cardContainer}>
       <Card.Title
@@ -15,8 +32,10 @@ export const Info = () => {
         subtitleStyle={styles.cardSubtitleStyle}
       />
       <Card.Content style={styles.cardContentStyle}>
-        <Title style={styles.cardContentTitleStyle}>Region Selected: Region</Title>
-        <Paragraph style={styles.cardContentParagraphStyle}>Extra Info</Paragraph>
+        <Title style={styles.cardContentTitleStyle}>{region}</Title>
+        {(regionExtraInfo !== null || regionExtraInfo !== undefined) && (
+          <Paragraph style={styles.cardContentParagraphStyle}>{regionExtraInfo}</Paragraph>
+        )}
       </Card.Content>
     </Card>
   )
@@ -47,7 +66,7 @@ const styles = StyleSheet.create({
     color: '#87CEEB',
   },
   cardContentParagraphStyle: {
-    textAlign: 'center',
+    textAlign: 'justify',
     color: '#E0FFFF',
   },
 })
