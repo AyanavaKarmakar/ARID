@@ -399,6 +399,8 @@ export const DB: DBTypes[] = [
   },
   {
     stateName: 'West Bengal',
+    extraInfo:
+      'Drinks may be served and consumed even on "dry days". Private consumption too is allowed on the said "dry days". Only the open sale of liquor at restaurants, liquor shops and other permitted places is disallowed on those days.',
     dryDates: [
       {
         date: modifyDate('01-14'),
