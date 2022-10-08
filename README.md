@@ -46,9 +46,20 @@ Contributers are always welcome to push a PR to update our `StaticData.ts` with 
 
 - Phase 2
 
-- phase 3
+- Phase 3
 
 Check `Milestones` for a brief.
+
+## Screenshots
+
+- Android App View
+![image](https://user-images.githubusercontent.com/89210438/194716396-50bf3bb5-3c81-4873-b267-620c34cfa9d0.png)
+
+- Browser View (Mobile)
+![image](https://user-images.githubusercontent.com/89210438/194716423-b8c36c6a-e310-4ddb-b6de-d9b98895977e.png)
+
+-Browser View (Desktop / Laptop)
+![image](https://user-images.githubusercontent.com/89210438/194716458-13254bf5-9b73-4fec-825f-09cd1c2792ec.png)
 
 ## Authors
 
