@@ -1,8 +1,8 @@
 import { Card, Paragraph, Title } from 'react-native-paper'
 import { useContext, useEffect, useState } from 'react'
 import { StyleSheet } from 'react-native'
-import { RegionContext } from '../RegionContext'
-import { DB } from '../StaticData'
+import { RegionContext } from '../utils/RegionContext'
+import { DB } from '../utils/StaticData'
 import moment from 'moment-timezone'
 
 export const Info = () => {
