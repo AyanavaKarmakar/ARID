@@ -2,9 +2,8 @@ import moment from 'moment-timezone'
 import { useContext } from 'react'
 import { View, StyleSheet, Platform } from 'react-native'
 import CalendarStrip from 'react-native-calendar-strip'
-import { RegionContext } from '../RegionContext'
-
-import { DB } from '../StaticData'
+import { RegionContext } from '../utils/RegionContext'
+import { DB } from '../utils/StaticData'
 
 /**
  * Adapted from react-native-calender-strip

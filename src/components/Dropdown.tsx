@@ -2,8 +2,8 @@ import { useState, useContext } from 'react'
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
 import { Dropdown } from 'react-native-element-dropdown'
 import AntDesign from 'react-native-vector-icons/AntDesign'
-import { RegionContext } from '../RegionContext'
-import { regionNames } from '../StaticData'
+import { RegionContext } from '../utils/RegionContext'
+import { regionNames } from '../utils/StaticData'
 
 /**
  * @see https://github.com/hoaphantn7604/react-native-element-dropdown
