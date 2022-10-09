@@ -47,6 +47,7 @@ export const Calender = () => {
           scrollerPaging
           selectedDate={moment().toDate()}
           startingDate={moment().toDate()}
+          maxDate={moment([2022]).endOf('year')}
           markedDates={markedDatesArray}
           calendarAnimation={{ type: 'sequence', duration: 100 }}
           daySelectionAnimation={{
@@ -76,6 +77,7 @@ export const Calender = () => {
           scrollerPaging
           selectedDate={moment().toDate()}
           startingDate={moment().toDate()}
+          maxDate={moment([2022]).endOf('year')}
           markedDates={markedDatesArray}
           calendarAnimation={{ type: 'sequence', duration: 100 }}
           daySelectionAnimation={{
