@@ -59,9 +59,7 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    if (region !== defaultRegion) {
-      storeData(region)
-    }
+    storeData(region)
   }, [region])
 
   return (
