@@ -2,6 +2,9 @@
 
 ARID is an open-source cross-platform application built using React Native, and Expo. The word 'ARID' being synonym of 'DRY', is aptly named; as the application helps users to find out if it is a 'dry day' today in their respective state. The application also hosts a built-in calender which users can scroll/swipe to check-out dry day dates before or after current date.
 
+- View in [browser](https://arid.vercel.app/)
+- Download for [Android](https://drive.google.com/file/d/1TSJjcL71fr9aUDSNbaoOkUTVDsCFl3pD/view?usp=sharing)
+
 ## Tech Stack
 
 React, React Native, Expo, and React Native Paper
@@ -35,7 +38,7 @@ https://arid.vercel.app/
 
 #### The region list is incomplete. Are more regions in the roadmap?
 
-Contributers are always welcome to push a PR to update our `StaticData.ts` with new regions!
+Contributers are always welcome to push a PR to update our `./src/utils/StaticData.ts` with new regions!
 
 ## Features
 
@@ -45,7 +48,6 @@ Contributers are always welcome to push a PR to update our `StaticData.ts` with 
 ## Roadmap
 
 - Phase 2
-
 - Phase 3
 
 Check `Milestones` for a brief.
@@ -53,12 +55,15 @@ Check `Milestones` for a brief.
 ## Screenshots
 
 - Android App View
+
 ![image](https://user-images.githubusercontent.com/89210438/194716396-50bf3bb5-3c81-4873-b267-620c34cfa9d0.png)
 
 - Browser View (Mobile)
+
 ![image](https://user-images.githubusercontent.com/89210438/194716423-b8c36c6a-e310-4ddb-b6de-d9b98895977e.png)
 
--Browser View (Desktop / Laptop)
+- Browser View (Desktop / Laptop)
+
 ![image](https://user-images.githubusercontent.com/89210438/194716458-13254bf5-9b73-4fec-825f-09cd1c2792ec.png)
 
 ## Authors
