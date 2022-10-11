@@ -19,8 +19,12 @@ export const Home = (props: Props) => {
   }, [navigation])
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setIsLoading((previousState) => !previousState)
+
+      return () => {
+        clearTimeout(timer)
+      }
     }, DELAY_MS)
   }, [])
 
