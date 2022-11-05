@@ -2,7 +2,7 @@
 
 ARID is an open-source cross-platform application built using React Native, and Expo. The word 'ARID' being synonym of 'DRY', is aptly named; as the application helps users to find out if it is a 'dry day' today in their respective state. The application also hosts a built-in calender which users can scroll/swipe to check-out dry day dates before or after current date.
 
-- View in [browser](https://arid.vercel.app/)
+- View in [browser](https://arid.ayanavakarmakar.software/)
 - Download for [Android](https://drive.google.com/file/d/1TSJjcL71fr9aUDSNbaoOkUTVDsCFl3pD/view?usp=sharing)
 
 ## Tech Stack
@@ -29,10 +29,6 @@ React, React Native, Expo, and React Native Paper
 Contributions are always welcome!
 
 See `Issues` for ways to get started.
-
-## Demo
-
-https://arid.vercel.app/
 
 ## FAQ
 
