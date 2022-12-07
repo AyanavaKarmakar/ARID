@@ -1,4 +1,4 @@
-![ARID](https://socialify.git.ci/AyanavaKarmakar/ARID/image?description=1&font=KoHo&language=1&owner=1&pattern=Formal%20Invitation&theme=Dark)
+![ARID](https://socialify.git.ci/AyanavaKarmakar/ARID/image?description=1&font=Inter&language=1&pattern=Formal%20Invitation&theme=Dark)
 
 ARID is an open-source cross-platform application built using React Native, and Expo. The word 'ARID' being synonym of 'DRY', is aptly named; as the application helps users to find out if it is a 'dry day' today in their respective state. The application also hosts a built-in calender which users can scroll/swipe to check-out dry day dates before or after current date.
 
